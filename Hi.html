@@ -8,3 +8,20 @@
 </head>
 
 <body>
+  <p>hi</p>
+  <input type="search" id="searches" placeholder="enter web address here.">
+  <button id="searchbtn" onclick="search">search</button>
+  <script>
+    function search() {
+      var query = document.getElementById("searches").value;
+      window.location.replace(query)
+    }
+  </script>
+  <style>
+    #searchbtn {
+      background-color: green;
+      color: aqua;
+    }
+  </style>
+  </body>
+</html>
